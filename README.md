@@ -1,46 +1,71 @@
-# Getting Started with Create React App
+# ♻️ Skip Booking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React + TypeScript application that allows users to **select a skip size** from a list based on their location. It features a clean and responsive UI with smooth selection interactions and highlights.
 
-## Available Scripts
+> 🔗 GitHub Repository: [Inoubli-Htm/skip-booking](https://github.com/Inoubli-Htm/skip-booking.git)
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🔄 Fetches skips dynamically from a public API
+- ✅ Clean, card-based UI using React-Bootstrap
+- 🔘 Visual selection (blue outline + dynamic button state)
+- 📱 Fully responsive across devices
+- 💬 Bottom action bar with current selection summary
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🧑‍💻 Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- ⚛️ React 18+
+- ✨ TypeScript
+- 💄 React-Bootstrap
+- 🔗 Axios (API calls)
 
-### `npm test`
+## 🖼️ Preview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*(You can add a `preview.png` inside `public/` and uncomment the line below)*  
+<!-- ![UI Preview](public/preview.png) -->
 
-### `npm run build`
+## 📂 Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+skip-booking/
+├── public/
+│   └── yarder-skip.jpg        # Image used for all cards
+├── src/
+│   ├── components/
+│   │   ├── SkipCard.tsx       # Skip card component
+│   │   ├── ProgressBar.tsx    # Top progress bar
+│   │   └── BottomBar.tsx      # Bottom sticky bar
+│   ├── types/
+│   │   └── Skip.ts            # TypeScript type for Skip
+│   ├── App.tsx                # Main app component
+│   └── App.css                # Custom styling
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone the repository and install dependencies:
 
-### `npm run eject`
+```bash
+git clone https://github.com/Inoubli-Htm/skip-booking.git
+cd skip-booking
+npm install
+npm run start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🧪 Testing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This version does not include tests yet, but you can easily add unit tests using `jest` or `react-testing-library`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🔧 Customization
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- 🖼 Replace the image `yarder-skip.jpg` in the `public/` folder to use different visuals.
+- 🎨 Modify the styles in `App.css` to customize the UI (colors, spacing, hover effects).
+- 🔗 Change the API endpoint in `App.tsx` to fetch skips based on another location or system.
 
-## Learn More
+## 📝 License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is licensed under the [MIT License](LICENSE).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+Made with by [@Inoubli-Htm](https://github.com/Inoubli-Htm)
